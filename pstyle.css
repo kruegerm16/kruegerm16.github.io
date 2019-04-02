@@ -1,0 +1,320 @@
+/*
+Colors:
+
+Red:			#CA3429
+Light Red:		#FF7066
+
+Yellow:			#E6A735
+Light Yellow:	#FFC966
+
+Green:			#426037
+Light Green:	#7EB26B
+
+Black/Brown:	#260600
+White/Cream:	#FFFAE5
+*/
+
+
+/*	NAVIGATION BAR		*/
+
+header nav {
+	position: fixed;
+	list-style-type: none;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: #426037;
+}
+
+header nav div {
+	display: block;
+    float: left;
+    width: 20%;
+}
+
+header nav div a {
+	padding: 1em;
+	font-size: 1.25em;
+}
+
+footer nav div a {
+	padding: 0.5em;
+}
+
+nav div a {
+	display: block;
+    color: #FFFAE5;
+    text-align: center;
+    margin: 0;
+    font-family: "Overlock SC", sans-serif;
+    text-decoration: none;
+}
+
+a:hover, a:active{
+	background-color: #7EB26B;
+	color: #260600;
+}
+
+#selected a {
+	background-color: #7EB26B;
+	color: #260600;
+}
+
+footer nav{
+	position: fixed;
+	list-style-type: none;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #426037;
+}
+
+footer nav div {
+	display: block;
+    float: right;
+    width: 75px;
+}
+
+.left {
+	float: left;
+	width: 25em;
+	font-family: "Overlock SC", sans-serif;
+	color: #FFFAE5;
+	display: inline-block;
+	margin: 1.5em;
+}
+
+/*	BODY STYLE	*/
+
+body {
+	background-color: #FFFAE5;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+div .redline, .greline, .yelline{
+	height: 0.75em;
+	border-radius: 0.75em;
+	margin: 0 auto;
+	width: 60%;
+}
+
+#ayline, #arline, #agline, #agline2 {
+	width: 90%;
+}
+
+div .yelline {
+	background-color: #E6A735;
+}
+
+div .redline {
+	background-color: #CA3429;
+}
+
+div .greline {
+	background-color: #426037;
+}
+
+div .title {
+	text-align: center;
+	width: 60%;
+}
+
+.name {
+	text-align: center;
+	margin-top: 2.75em;
+	margin-bottom: 0;
+	font-size: 5em;
+	color: #260600;
+	font-family: "Sigmar One", serif;
+}
+
+.title p {
+	margin: 1.4em auto;
+	display: block;
+	text-align: center;
+	width: 40%;
+	font-size: 1.75em;
+	color: #260600;
+	font-family: "Overlock SC", sans-serif;
+}
+
+.ar {
+	float: right;
+	height: 100vh;
+	width: 60%;
+	text-align: center;
+	overflow: hidden;
+}
+
+.textainer {
+	width: 600px;
+	color: #260600;
+	font-size: 1.75em;
+	font-family: "Overlock SC", sans-serif;
+	margin-top: 140px;
+	margin-left: 10%;
+}
+
+.about {
+	height: 100vh;
+	overflow: hidden;
+}
+
+.al {
+	float: left;
+	width: 40%;
+	margin-top: 100px;
+	max-height: 100vh;
+}
+
+img {
+	max-width: 100%;
+}
+
+.blog {
+	width: 60%;
+	margin: 6em auto;
+}
+
+.ts {
+	font-size: .75em;
+	text-align: right;
+}
+
+.post {
+	padding: 0.1em 1em;
+	border-radius: 0.75em;
+	background-color: #FFC966;
+	color: #260600;
+	font-size: 1.75em;
+	font-family: "Overlock SC", sans-serif;
+	margin-bottom: 1em;
+}
+
+#cleft {
+	margin-top: 10em;
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+
+#cright {
+	width: 50%;
+	float: right;
+}
+
+.contbox {
+	width: 80%;
+	height: 22em;
+	margin: 11em auto;
+	background-color: #FFC966;
+	border-radius: 0.75em;
+}
+
+textarea {
+	height: 15em;
+}
+
+input[type=text], select, textarea {
+	width: 90%;
+	margin-left: 1.4vw;
+	margin-top: 1em;
+	padding: .25em;
+	border: 1px solid #E6A735;
+	border-radius: 4px;
+	resize: none;
+}
+
+input[type=submit] {
+	background-color: lightgray;
+	color: gray;
+	width: 92%;
+	padding: .25em 9.25em;
+	margin: 0.75em 1.4vw;
+	border-radius: 4px;
+	border: none;
+}
+
+h2 {
+	font-size: 2.75em;
+	color: #260600;
+	font-family: "Sigmar One", serif;
+}
+
+.contact {
+	font-size: 2em;
+	color: #260600;
+	font-family: "Overlock SC", sans-serif;
+}
+
+img {
+    image-orientation: from-image;
+}
+
+#space {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	width: 100%;
+	text-align: center;
+}
+
+.art {
+	position: relative;
+	display: inline-block;
+	width: 300px;
+	height: 400px;
+	margin: 1%;
+	z-index: -1;
+	padding: 6px;
+	border-radius: 6px;
+	background-color: #7EB26B;
+}
+
+@media only screen and (max-width: 1000px) {
+	.textainer {
+		width: 400px;
+		font-size: 1.4em;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 7em;
+	}
+
+	.post {
+		font-size: 1.4em;
+	}
+
+	.title p {
+		font-size: 1.4em;
+	}
+
+	h2 {
+		font-size: 2em;
+	}
+
+	.contact {
+		font-size: 1.4em;
+	}
+
+	#cleft {
+		margin-top: 14em;
+	}
+
+	.contbox {
+		width: 20em;
+		height: 17em;
+		margin: 14em auto;
+		background-color: #FFC966;
+		border-radius: 0.75em;
+	}
+
+	textarea {
+		height: 9em;
+	}
+
+}
